@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Машинки</title>
+  <link rel="icon" type="image/png" href="favicon.png" />
+  <link rel="stylesheet" type="text/css" href="style2.css" media="screen">
+</head>
+<body>
+
+<a style="position:absolute; top:700px; left: 25px;" href="index.html">1</a>
+<a style="position:absolute; top:700px; left: 40px;" href="2.html">2</a>
+<a style="position:absolute; top:700px; left: 55px;" href="3.html">3</a>
+<a style="position:absolute; top:700px; left: 70px;" href="3.html">4</a>
+<a style="position:absolute; top:700px; left: 85px;" href="5.html">5</a>
+<a style="position:absolute; top:700px; left: 100px;" href="6.html">6</a>
+<a style="position:absolute; top:700px; left: 115px;" href="7.html">7</a>
+<a style="position:absolute; top:700px; left: 130px;" href="8.html">8</a>
+<a style="position:absolute; top:700px; left: 145px;" href="7.html">9</a>
+<a style="position:absolute; top:700px; left: 165px;" href="10.html">10</a>
+<a style="position:absolute; top:700px; left: 185px;" href="11.html">11</a>
+<a style="position:absolute; top:700px; left: 205px;" href="11.html">12</a>
+<a style="position:absolute; top:700px; left: 225px;" href="13.html">13</a>
+<a style="position:absolute; top:700px; left: 245px;" href="13.html">14</a>
+<a style="position:absolute; top:700px; left: 265px;" href="15.html">15</a>
+<a style="position:absolute; top:700px; left: 285px;" href="16.html">16</a>
+
+<div class="slideshow-container">
+
+  <div class="mySlides fade">
+    <div class="numbertext">1 / 4</div>
+    <img src="image\car1.jpg" style="width:100%">
+    <div class="text">Синяя машинка</div>
+  </div>
+  <div class="mySlides fade">
+    <div class="numbertext">2 / 4</div>
+    <img src="image\car2.jpg" style="width:100%">
+    <div class="text">Оранжевая машинка</div>
+  </div>
+  <div class="mySlides fade">
+    <div class="numbertext">3 / 4</div>
+    <img src="image\car3.jpg" style="width:100%">
+    <div class="text">Машинка с цветочками</div>
+  </div>
+  <div class="mySlides fade">
+    <div class="numbertext">4 / 4</div>
+    <img src="image\car4.jpg" style="width:100%">
+    <div class="text">Пожарная машинка</div>
+  </div>
+
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+
+<br>
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+  <span class="dot" onclick="currentSlide(4)"></span>
+</div>
+<script>
+
+var slideIndex = 1;
+showSlides(slideIndex);
+<!--*переход к следущему слайду*--!>
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
+</script>
+</body>
+</html>

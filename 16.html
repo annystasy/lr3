@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Машинки</title>
+  <link rel="stylesheet" type="text/css" href="style11.css" media="screen">
+</head>
+<body>
+
+<a style="position:absolute; top:730px; left: 25px;" href="index.html">1</a>
+<a style="position:absolute; top:730px; left: 40px;" href="2.html">2</a>
+<a style="position:absolute; top:730px; left: 55px;" href="3.html">3</a>
+<a style="position:absolute; top:730px; left: 70px;" href="3.html">4</a>
+<a style="position:absolute; top:730px; left: 85px;" href="5.html">5</a>
+<a style="position:absolute; top:730px; left: 100px;" href="6.html">6</a>
+<a style="position:absolute; top:730px; left: 115px;" href="7.html">7</a>
+<a style="position:absolute; top:730px; left: 130px;" href="8.html">8</a>
+<a style="position:absolute; top:730px; left: 145px;" href="7.html">9</a>
+<a style="position:absolute; top:730px; left: 165px;" href="10.html">10</a>
+<a style="position:absolute; top:730px; left: 185px;" href="11.html">11</a>
+<a style="position:absolute; top:730px; left: 205px;" href="11.html">12</a>
+<a style="position:absolute; top:730px; left: 225px;" href="13.html">13</a>
+<a style="position:absolute; top:730px; left: 245px;" href="13.html">14</a>
+<a style="position:absolute; top:730px; left: 265px;" href="15.html">15</a>
+<a style="position:absolute; top:730px; left: 285px;" href="16.html">16</a>
+<h1>Сказка</h1>
+<p>Имя героя: <input style="position:absolute; top:80px; left: 170px;" type="text"id="f" placeholder="Введите текст" size=34></p>
+<p>Его любимое занятие: <input style="position:absolute; top:115px; left: 170px;" type="text"id="z" placeholder="Введите текст" size=34></p>
+<p>Друг героя: <input style="position:absolute; top:150px; left: 170px;" type="text"id="d" placeholder="Введите текст" size=34></p>
+<p>Подарок: <input style="position:absolute; top:185px; left: 170px;" type="text"id="p" placeholder="Введите текст" size=34></p>
+<p><input type=button value="Сформировать сказку" OnClick="NewWin()"></p>
+<script>
+function NewWin()
+{
+var win=window.open("","","width=560,height=560");
+window.open();
+var str = "<h1>"+document.getElementById('f').value+" и подарок</h1> <p>Жил-был "+ document.getElementById('f').value+". Он очень любил "+document.getElementById('z').value+". </p><p>Он очень любил это и думал об этом каждый день. А его верный друг "+document.getElementById('d').value+" очень любил смотреть на то, с какой самоотдачей он этим занимается. "+document.getElementById('d').value+" так дорожил "+document.getElementById('f').value+", что решил присоединиться к другу и понял, что ему тоже это очень нравится. В благодарность он принёс "+document.getElementById('f').value+" "+document.getElementById('p').value+".</p>";
+win.document.write(str);
+win.document.close();
+}
+</script>
+</body>
+</html>

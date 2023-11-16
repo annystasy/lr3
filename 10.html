@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Машинки</title>
+</head>
+<body>
+
+<a style="position:absolute; top:730px; left: 25px;" href="index.html">1</a>
+<a style="position:absolute; top:730px; left: 40px;" href="2.html">2</a>
+<a style="position:absolute; top:730px; left: 55px;" href="3.html">3</a>
+<a style="position:absolute; top:730px; left: 70px;" href="3.html">4</a>
+<a style="position:absolute; top:730px; left: 85px;" href="5.html">5</a>
+<a style="position:absolute; top:730px; left: 100px;" href="6.html">6</a>
+<a style="position:absolute; top:730px; left: 115px;" href="7.html">7</a>
+<a style="position:absolute; top:730px; left: 130px;" href="8.html">8</a>
+<a style="position:absolute; top:730px; left: 145px;" href="7.html">9</a>
+<a style="position:absolute; top:730px; left: 165px;" href="10.html">10</a>
+<a style="position:absolute; top:730px; left: 185px;" href="11.html">11</a>
+<a style="position:absolute; top:730px; left: 205px;" href="11.html">12</a>
+<a style="position:absolute; top:730px; left: 225px;" href="13.html">13</a>
+<a style="position:absolute; top:730px; left: 245px;" href="13.html">14</a>
+<a style="position:absolute; top:730px; left: 265px;" href="15.html">15</a>
+<a style="position:absolute; top:730px; left: 285px;" href="16.html">16</a><h1> Расчёт площади прямоугольника </h1>
+<p> Введите стороны прямоугольника </p>
+<input  id="x"/>
+<input  id="y"/>
+<input type="button" value="Посчитать" onClick="checkAll();">
+<input type="text"id="result" value="">
+<script>
+function checkAll()
+{
+var x=document.getElementById("x").value;
+var y=document.getElementById("y").value;
+var p4=document.getElementById('result');
+alert(x*y);
+p4.value="Площадь: "+x*y;
+}
+</script>
+</body>
+</html>

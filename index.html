@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Машинки</title>
+  <link rel="stylesheet" type="text/css" href="style.css" media="screen">
+</head>
+<body>
+<div style="width:1470px;height:750px;background-color: #e0c69f;">
+<a style="position:absolute; top:730px; left: 25px;" href="index.html">1</a>
+<a style="position:absolute; top:730px; left: 40px;" href="2.html">2</a>
+<a style="position:absolute; top:730px; left: 55px;" href="3.html">3</a>
+<a style="position:absolute; top:730px; left: 70px;" href="3.html">4</a>
+<a style="position:absolute; top:730px; left: 85px;" href="5.html">5</a>
+<a style="position:absolute; top:730px; left: 100px;" href="6.html">6</a>
+<a style="position:absolute; top:730px; left: 115px;" href="7.html">7</a>
+<a style="position:absolute; top:730px; left: 130px;" href="8.html">8</a>
+<a style="position:absolute; top:730px; left: 145px;" href="7.html">9</a>
+<a style="position:absolute; top:730px; left: 165px;" href="10.html">10</a>
+<a style="position:absolute; top:730px; left: 185px;" href="11.html">11</a>
+<a style="position:absolute; top:730px; left: 205px;" href="11.html">12</a>
+<a style="position:absolute; top:730px; left: 225px;" href="13.html">13</a>
+<a style="position:absolute; top:730px; left: 245px;" href="13.html">14</a>
+<a style="position:absolute; top:730px; left: 265px;" href="15.html">15</a>
+<a style="position:absolute; top:730px; left: 285px;" href="16.html">16</a>
+
+<h1 style="padding: 3px 0 0 110px;">Игрушечные металлические машинки</h1>
+
+<div><img onMouseOver="Car1text()" onmouseout="change()" src="image\car1.jpg" name="pic1" id="img1" style="position:absolute; top:50px; left: 25px; width:300; height:300; z-index: 1; "></div>
+<div><img onMouseOver="Car2text()" onmouseout="change()" src="image\car2.jpg" name="pic2" id="img2" style="position:absolute; top:50px; left: 850px; width:300; height:300; z-index: 1; "></div>
+<div><img onMouseOver="Car3text()" onmouseout="change()" src="image\car3.jpg" name="pic3" id="img3" style="position:absolute; top:375px; left: 25px; width:300; height:300; z-index: 1; "></div>
+<div><img onMouseOver="Car4text()" onmouseout="change()" src="image\car4.jpg" name="pic4" id="img4" style="position:absolute; top:375px; left: 850px; width:300; height:300; z-index: 1; "></div>
+
+<p><input type="text" size="85" id="textpole" style="position:absolute; top:695px; left: 25px;  height: 35px; padding: 1px; z-index: 1; color: #172566" /></p>
+</div>
+
+<script>
+    function Car1text() {
+     document.getElementById("textpole").value="Синяя машинка, 250р";
+    }
+    function Car2text() {
+     document.getElementById("textpole").value="Оранжевая машинка, 560р";
+    }
+    function Car3text() {
+     document.getElementById("textpole").value="Машинка с цветочками, 600р";
+    }
+    function Car4text() {
+     document.getElementById("textpole").value="Пожарная машинка, 300р";
+    }
+    function change() {
+     document.getElementById("textpole").value="";
+    }
+</script>
+
+</body>
+</html>
